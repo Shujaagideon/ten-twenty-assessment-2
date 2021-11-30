@@ -48,6 +48,32 @@
     align-items: center;
     position: relative;
 }
+.section2-cover .intersect4{
+    height: 15%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.intersect4 .make-enquiry-btn{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #CB9F77;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.intersect4 .last-text{
+    width: 60%;
+    letter-spacing: 1.3px;
+    font-size: 22px;
+}
+
 .section2-cover .upper-text{
     font-size: 50px;
     text-transform: capitalize;
@@ -128,6 +154,13 @@ a{
     .section2-cover .intersect2{
         width: 100%;
         font-size: 14px;
+    }
+    .section2-cover .intersect4{
+        width: 100%;
+    }
+    .intersect4 .last-text{
+        width: 60%;
+        font-size: 17px;
     }
     .section2-cover .upper-text{
         font-size: 30px;

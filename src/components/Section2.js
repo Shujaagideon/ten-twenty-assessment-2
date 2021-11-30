@@ -51,6 +51,15 @@ const Section = ({ diff: skew, curr }) => {
                                 </IntersectionObserver>
                             </div>
                         </div>
+                        <div className="intersect4">
+                            <div className="make-enquiry-btn">
+                                <p>make</p>
+                                <p>enquiry</p>
+                            </div>
+                            <div className="last-text">
+                                <p>Diversifying for a more secure future</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <Flower className='flower' />
