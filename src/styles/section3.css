@@ -33,7 +33,7 @@
     width: 45%;
     font-size: 25px;
 }
-.intersection{
+.fix-zindex{
     position: relative;
     z-index: 5;
 }

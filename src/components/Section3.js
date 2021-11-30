@@ -25,24 +25,26 @@ const Section3 = ({ diff: skew, curr }) => {
     useEffect(() => {
         // setWidth(ref.current.getBoundingClientRect().right)
     }, [ref]);
-    
+
     return (
         <>
             <div className="section3">
                 <div className="window">
                     <motion.div className="section3-cover"
-                        // drag='x'
-                        // ref={ref}
-                        // dragElastic={0.08}
-                        // dragConstraints={{ left: -width + width/1.8, right: 0 }}
+                    // drag='x'
+                    // ref={ref}
+                    // dragElastic={0.08}
+                    // dragConstraints={{ left: -width + width/1.8, right: 0 }}
                     >
-                        <IntersectionObserver className='intersection'>
-                            <Parallax className='parallax' diff={diff}>
-                                <div className="upper-text">
-                                    <p>Building a lasting legacy for individuals, families and businesses globally</p>
-                                </div>
-                            </Parallax>
-                        </IntersectionObserver>
+                        <div className="fix-zindex">
+                            <IntersectionObserver className='intersection'>
+                                <Parallax className='parallax' diff={diff}>
+                                    <div className="upper-text">
+                                        <p>Building a lasting legacy for individuals, families and businesses globally</p>
+                                    </div>
+                                </Parallax>
+                            </IntersectionObserver>
+                        </div>
                         <IntersectionObserver >
                             <div className='img-container'>
                                 <Parallax className='img-parallax' duration={8} diff={diff} current={current / 10}>
@@ -64,29 +66,29 @@ const Section3 = ({ diff: skew, curr }) => {
                                 <IntersectionObserver>
                                     <div className='random random-1'>
                                         <Parallax duration={8} diff={diff} current={current / 10}>
-                                        <img src={img4} alt="" />
+                                            <img src={img4} alt="" />
                                         </Parallax>
                                     </div>
-                              </IntersectionObserver>
+                                </IntersectionObserver>
 
                                 <IntersectionObserver>
                                     <div className='random random-2' >
                                         <Parallax duration={8} diff={diff} current={current / 20}>
-                                        <img src={img3} alt="" />
+                                            <img src={img3} alt="" />
                                         </Parallax>
                                     </div>
                                 </IntersectionObserver>
                                 <IntersectionObserver>
                                     <div className='random random-3'>
                                         <Parallax duration={8} diff={diff} current={current / 20}>
-                                        <img src={img2} alt="" />
+                                            <img src={img2} alt="" />
                                         </Parallax>
                                     </div>
                                 </IntersectionObserver>
 
                             </div>
                         </div>
-                        
+
                     </motion.div>
                 </div>
             </div>
