@@ -21,26 +21,32 @@ const SmoothScroll = ({ children }) => {
         return start * (1 - speed) + end * speed;
     }
     const SetAnim = () => {
-        let refHeight = Wrapper.current !== null && Wrapper.current.getBoundingClientRect().width - window.innerWidth/2
+        let refHeight = Wrapper.current !== null && Wrapper.current.getBoundingClientRect().width - window.innerWidth/2;
+        if(window.innerHeight> window.innerWidth){
+            refHeight = Wrapper.current !== null && Wrapper.current.getBoundingClientRect().height;
+        }
         document.body.style.height = `${refHeight}px`;
-        // console.log(document.body.style.height);
-        console.log(Wrapper.current.getBoundingClientRect());
 
         Animation()
     }
 
     const Animation = () => {
-
+        
         current = Lerp(current, target, ease);
         current = parseFloat(current.toFixed(2));
         target = window.scrollY;
         skewDiff = (target - current) * 0.008;
         setDiff(skewDiff);
         setCurr(current);
-        // console.log(current)
-        // scrollPos = ((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100);
-
+        
         if (Wrapper.current !== null) Wrapper.current.style.transform = `translate3D(${- current}px, 0, 0) skewX(${skewDiff}deg)`
+        if (window.innerHeight > window.innerWidth) {
+            if (Wrapper.current !== null){
+                Wrapper.current.style.height = 'fit-content';
+                 Wrapper.current.style.transform = `translate3D(0, ${- current}px, 0) skewY(${skewDiff}deg)`
+                }
+        }
+
 
         requestAnimationFrame(Animation);
     }

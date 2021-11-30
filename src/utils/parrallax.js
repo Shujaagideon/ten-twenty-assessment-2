@@ -1,8 +1,8 @@
 import { motion} from 'framer-motion/dist/framer-motion'
 
-const transition = { ease: [0.17, 0.67, 0.83, 0.67], type: "spring", stiffness: 70  };
+const transition = { ease: [0.17, 0.67, 0.83, 0.67], type: "spring", stiffness: 140  };
 
-const Parallax = ({ children, offset = 50, diff=0, current=0,duration=0.3 }) => {
+const Parallax = ({ children, offset = 50, diff=0, current=0,duration=0.8 }) => {
     const animate = {
         x : -current + offset,
         skewX: diff,

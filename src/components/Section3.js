@@ -43,7 +43,7 @@ const Section3 = ({ diff: skew, curr }) => {
                                 </div>
                             </Parallax>
                         </IntersectionObserver>
-                        <IntersectionObserver className='intersection'>
+                        <IntersectionObserver >
                             <div className='img-container'>
                                 <Parallax className='img-parallax' duration={8} diff={diff} current={current / 10}>
                                     <img src={img7} alt="" />
@@ -51,7 +51,7 @@ const Section3 = ({ diff: skew, curr }) => {
 
                             </div>
                         </IntersectionObserver>
-                        <IntersectionObserver className='intersection'>
+                        <IntersectionObserver>
                             <Parallax className='parallax' duration={4} diff={diff} current={current / 10}>
                                 <div className="blended-text">
                                     <p>business</p>
@@ -64,22 +64,22 @@ const Section3 = ({ diff: skew, curr }) => {
                                 <IntersectionObserver>
                                     <div className='random random-1'>
                                         <Parallax duration={8} diff={diff} current={current / 10}>
-                                        <img src={img2} alt="" />
+                                        <img src={img4} alt="" />
                                         </Parallax>
                                     </div>
                               </IntersectionObserver>
 
                                 <IntersectionObserver>
                                     <div className='random random-2' >
-                                        <Parallax duration={8} diff={diff} current={current / 10}>
+                                        <Parallax duration={8} diff={diff} current={current / 20}>
                                         <img src={img3} alt="" />
                                         </Parallax>
                                     </div>
                                 </IntersectionObserver>
                                 <IntersectionObserver>
                                     <div className='random random-3'>
-                                        <Parallax duration={8} diff={diff} current={current / 10}>
-                                        <img src={img4} alt="" />
+                                        <Parallax duration={8} diff={diff} current={current / 20}>
+                                        <img src={img2} alt="" />
                                         </Parallax>
                                     </div>
                                 </IntersectionObserver>

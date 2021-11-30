@@ -71,7 +71,7 @@ const IntersectionObserver = ({ children, threshold }) => {
     // }, [])
     return (
         <>
-            <motion.div className="cont"
+            <motion.div
                 animate={inView ? 'animate' : 'initial'}
                 variants={variants}
                 transition={transition}
