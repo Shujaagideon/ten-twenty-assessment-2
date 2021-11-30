@@ -1,0 +1,105 @@
+.header{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 4;
+}
+.header .cover{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .cover .logo{
+    width: 20%;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+nav .left-nav{
+    width: 45%;
+}
+
+nav .left-nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+a{
+    color: var(--cream);
+}
+
+nav .right-nav{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .right-nav .links{
+    width: 40%;
+}
+nav .right-nav .links ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav .right-nav .btns{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .right-nav .btns .search{
+    height: 40px;
+    width: 40px;
+    border: solid 1px var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+nav .right-nav .btns .book-btn{
+    height: 40px;
+    border: solid 1px var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 4px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .link{
+        display: none;
+        visibility: hidden;
+    }
+    nav{
+        justify-content: flex-end;
+    }
+    nav .right-nav{ 
+        width: 70%;
+    }
+    nav .right-nav .btns{
+        width: 100%;
+    }
+}

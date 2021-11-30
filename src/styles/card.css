@@ -1,0 +1,42 @@
+
+.card{
+    width: 250px;
+    height: 90%;
+    margin-right: 60px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card .text{
+    height: 30%;
+    width: 100%;
+    font-size: 14px;
+}
+.card .text h2{
+    font-size: 35px;
+}
+
+.card .image-part{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card .image-part img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.card .image-part img:hover{
+    filter: url(#noise);
+}
+
+.card .image-part svg{
+    display: none;
+}

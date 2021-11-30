@@ -1,0 +1,15 @@
+.smooth-scroll-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.smooth-scroll-container .wrapp{
+    height: 100vh;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+}

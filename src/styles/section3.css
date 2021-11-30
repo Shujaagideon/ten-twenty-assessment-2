@@ -1,0 +1,110 @@
+.section3{
+    background: var(--cream);
+    color: var(--black);
+    height: 120vh;
+    width: 150vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section3 .window{
+    width: 100%;
+    height: 80%;
+}
+.section3-cover{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3-cover{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3-cover .upper-text{
+    width: 45%;
+    /* background: #000; */
+    font-size: 25px;
+}
+.section3-cover .blended-text{
+    width: 100%;
+    font-size: 20rem;
+    text-transform: capitalize;
+    align-self: flex-end;
+    z-index: 1;
+}
+.section3-cover .blended-text p{
+    color: var(--black);
+    mix-blend-mode: difference;
+}
+.img-container{
+    position: absolute;
+    height: 120%;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    overflow: hidden;
+}
+.img-container .img-parallax{
+    background: rgba(0, 0, 0, 0.603);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.img-container img{
+    width: 150%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.random-imgs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.random-imgs .random-cover{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.random-imgs .random-cover .random{
+    position: absolute;
+    height: 35%;
+    overflow: hidden;
+}
+.random-imgs .random-cover .random-1{
+    width: 25%;
+    min-width: 250px;
+    left: -15%;
+    top: 25%;
+    z-index: 2;
+}
+.random-imgs .random-cover .random-2{
+  width: 10%;
+  left: 20%;
+  bottom: 10%;
+}
+.random-imgs .random-cover .random-3{
+  width: 20%;
+  right: 35%;
+  top: 25%;
+}
+.random-imgs .random-cover img{
+    height: 100%;
+    width: 130%;
+    object-fit: cover;
+    object-position: center;
+}
